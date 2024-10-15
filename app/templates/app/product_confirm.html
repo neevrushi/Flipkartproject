@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}FlipKart|Seller{% endblock %}
+{%  block body %}
+<div class="container">
+    <div class="row">
+        <center>
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+               <h2>Are You sure to remove{{object.productname}}
+                <a type="/ProductList"><input type="button" value="Cancel"></a>
+            </form>
+        </center>
+    </div>
+</div>
+{% endblock %}
